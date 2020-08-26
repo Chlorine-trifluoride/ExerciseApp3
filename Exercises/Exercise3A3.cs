@@ -43,7 +43,7 @@ namespace ExerciseApp3.Exercises
     {
         public Circle(double radius)
         {
-            this.Area = radius * 2 * Math.PI;
+            this.Area = Math.Pow(radius, 2) * Math.PI;
         }
     }
 
