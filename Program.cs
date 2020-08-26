@@ -58,6 +58,7 @@ namespace ExerciseApp3
                 if (selection >= exerArray.Length)
                     return; // selection out of range
 
+                Console.Clear();
                 IExercise selectedExer = Activator.CreateInstance(exerArray[selection]) as IExercise;
                 selectedExer.Run();
 
