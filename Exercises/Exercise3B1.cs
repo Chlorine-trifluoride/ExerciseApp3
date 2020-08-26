@@ -46,7 +46,8 @@ namespace ExerciseApp3.Exercises
 
             // Once done is set to true we fall bakc here
             // Execute the events delegate
-            eventsToExec();
+            if (!(eventsToExec is null))
+                eventsToExec();
         }
 
         private void PrintEventMethodsHelp()
